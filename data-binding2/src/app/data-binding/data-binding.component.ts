@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
+  url: string = 'http://loiane.com.br';
+  cursoAngular: boolean = true;
+  urlImagem = 'https://picsum.photos/400/200';
+
+  getValor(){
+    return 1;
+  }
+
+  getCurtirCurso(){
+    return true;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
