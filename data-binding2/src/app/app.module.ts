@@ -1,5 +1,3 @@
-import { FormsModule } from '@angular/forms';
-import { MeuFormModule } from './meu-form/meu-form.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,9 +12,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    MeuFormModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

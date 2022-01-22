@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "cdbb76b9-68c9-4335-bee5-1e93c6658fe7"
+    "analytics": "60761639-d337-45cb-a3d7-5707dca33717"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "data-binding": {
+    "data-binding2": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/data-binding",
+            "outputPath": "dist/data-binding2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -30,8 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "../node/bootstrap/dist/css/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -72,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "data-binding:build:production"
+              "browserTarget": "data-binding2:build:production"
             },
             "development": {
-              "browserTarget": "data-binding:build:development"
+              "browserTarget": "data-binding2:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "data-binding:build"
+            "browserTarget": "data-binding2:build"
           }
         },
         "test": {
@@ -106,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "data-binding"
+  "defaultProject": "data-binding2"
 }
