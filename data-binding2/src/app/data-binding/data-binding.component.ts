@@ -16,6 +16,8 @@ export class DataBindingComponent implements OnInit {
 
   isMouseOver: boolean = false;
 
+  nome: string = 'abc' ;
+
   salvarValor(valor: any){
     this.valorSalvo = valor.value;
     console.log(this.valorSalvo);
